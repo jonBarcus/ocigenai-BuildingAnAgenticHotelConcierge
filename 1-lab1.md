@@ -3,9 +3,9 @@
 ## Introduction
 
 This lab focuses on how hotels can enhance guest experiences using **OCI Generative AI**.  
-You will step into the shoes of Maria, the General Manager of the Grand Plaza Hotel in Ho Chi Minh City, who receives multilingual reviews daily. With AI, you will learn to summarize reviews, analyze guest sentiment, and translate feedback into English—helping managers act quickly and effectively.
+You will step into the shoes of Maria, the General Manager of the Grand Plaza Hotel in Ho Chi Minh City, who receives multilingual reviews daily. With AI, you will learn to summarize reviews, analyze guest sentiment, and translate feedback into English helping managers act quickly and effectively.
 
-Estimated Time: 20–30 minutes
+Estimated Time: 15–20 minutes
 
 ### Objectives
 
@@ -19,31 +19,40 @@ In this lab, you will:
 ### Dataset
 
 We will use the multi-language TripAdvisor Hotel Reviews dataset from  
-[Zenodo / NIAID (Vietnamese)](https://data.niaid.nih.gov/resources?id=zenodo_7967493).  
+[Zenodo / NIAID ](https://data.niaid.nih.gov/resources?id=zenodo_7967493).  
 
 A trimmed CSV dataset is provided in this repository under:  
-`labs/datasets/`
+[TripAdvisorReviewsMultiLang.csv](../files/TripAdvisorReviewsMultiLang.csv)  
 
 ---
 
 ## Task 1: Get Your Sample Text (5 minutes)
 
-1. Open the CSV dataset.  
-2. Copy one **non-English review** (e.g., Vietnamese, Chinese, Korean).
+1. Open the CSV ( [TripAdvisorReviewsMultiLang.csv](../files/TripAdvisorReviewsMultiLang.csv) ) dataset. 
+2. Copy one **non-English review** (e.g., Vietnamese, ).
+![Alt text](images/copyinputdata.png "Input Data")
 
 ---
 
 ## Task 2: Navigate to the OCI Generative AI Playground (5 minutes)
+ 
+1. In the **OCI Console**, go to: **Analytics & AI → 'Generative AI' in AI Services **.  
 
-1. In the **OCI Console**, go to: **Analytics & AI → AI Services → Generative AI**.  
-2. Click **Playground** to open the interactive interface.
+![Alt text](images/AIServices-GenAI-Link.png "Gen AI Services")
+
+2. Click **Go to Playground** or **Playground-->Chat** in the sidebar to open the interactive interface.
+
+![Alt text](images/GoToPlayground.png "Playground")
 
 ---
 
-## Task 3: Summarize and Analyze the Review (10 minutes)
+## Task 3: Summarize and Analyze the Review (8 minutes)
 
-1. In the Playground, select a **Grok model** (strong multilingual capabilities).  
-2. Use the following prompt with your chosen review:
+1. In the Playground, select a **Grok model** (e.g. xai.grok-3). Grok is a strong multilingual capabilities.  
+
+![Alt text](images/SelectGrok-4.png "Select Grok-4")
+
+2. Use the following prompt with your chosen review and click **Submit**.
 
    ```
    Analyze the following hotel review. First, provide a one-paragraph summary of the review in its original language. After the summary, identify the sentiment as Positive, Negative, or Neutral.
@@ -52,15 +61,26 @@ A trimmed CSV dataset is provided in this repository under:
    [PASTE THE NON-ENGLISH REVIEW TEXT HERE]
    ```
 
-3. Click **Generate**.  
-4. The model outputs a summary in the **original language** plus sentiment analysis.
+   (e.g.)
+
+   ```
+   Analyze the following hotel review. First, provide a one-paragraph summary of the review in its original language. After the summary, identify the sentiment as Positive, Negative, or Neutral.
+- Nằm ở số 4 Tôn Đức Thắng (trong khu villa cao cấp) và đối diện sông Trà Khúc, cách trung tâm thành phố Quảng Ngãi khoảng 2-3 km. Khách sạn Hana Riverside là một lựa chọn tuyệt vời cho sự riêng tư. - Đây thực chất là 1 dạng villa và kinh doanh các phòng
+   ```
+
+   ![Alt text](images/EnterInputAndSubmit.png "Enter Input And Submit")
+   
+
+3. The model outputs a summary in the **original language** plus sentiment analysis.
+
+   ![Alt text](images/SentimentofReview.png "Sentiment of Review")
 
 ---
 
-## Task 4: Translate the Review (5 minutes)
+## Task 4: Translate the Review (2 minutes)
 
 1. Start a new chat in the Playground.  
-2. Use the following prompt:
+2. Use the following prompt and click  **Submit** to get a full English translation:
 
    ```
    Translate the following hotel review into English:
@@ -68,7 +88,15 @@ A trimmed CSV dataset is provided in this repository under:
    [PASTE THE SAME NON-ENGLISH REVIEW TEXT HERE]
    ```
 
-3. Click **Generate** to get a full English translation.
+   (e.g.)
+   ```
+   Translate the following hotel review into English.
+- Nằm ở số 4 Tôn Đức Thắng (trong khu villa cao cấp) và đối diện sông Trà Khúc, cách trung tâm thành phố Quảng Ngãi khoảng 2-3 km. Khách sạn Hana Riverside là một lựa chọn tuyệt vời cho sự riêng tư. - Đây thực chất là 1 dạng villa và kinh doanh các phòng
+   ```
+
+   The model outputs the translated summary in  **English language**  
+   ![Alt text](images/TranslatedText.png "Output - TranslatedText")
+   ***Translated Text***
 
 ---
 

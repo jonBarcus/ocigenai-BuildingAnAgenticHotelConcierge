@@ -34,50 +34,55 @@ In this lab, you will:
 
 ---
 
-## Objectives 🎯  
+Objectives 
 
 In this workshop, you will learn how to:  
 
-- ✅ Use OCI Generative AI to summarize reviews in their original language  
-- ✅ Analyze sentiment (**Positive, Negative, or Neutral**) of guest feedback  
-- ✅ Translate reviews into English for hotel management  
-- ✅ Create a Knowledge Base in OCI Generative AI Agents using guest reviews  
-- ✅ Build an AI Concierge Agent with **RAG capabilities**  
-- ✅ Extend the agent with custom tools (**web search**) using the OCI Generative AI Agent Development Kit (ADK)  
-- ✅ Understand how AI improves response times, guest satisfaction, and revenue  
+-  Use OCI Generative AI to summarize reviews in their original language  
+-  Analyze sentiment (**Positive, Negative, or Neutral**) of guest feedback  
+-  Translate reviews into English for hotel management  
+-  Create a Knowledge Base in OCI Generative AI Agents using guest reviews  
+-  Build an AI Concierge Agent with **RAG capabilities**  
+-  Extend the agent with custom tools (**web search**) using the OCI Generative AI Agent Development Kit (ADK)  
+-  Understand how AI improves response times, guest satisfaction, and revenue  
 
 ---
 
-## Prerequisites  
+Prerequisites  
 
 - Your tenancy must be subscribed to an **OCI region** with **Generative AI service** available.  
-  👉 Refer to the [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm) for available regions.  
+  👉 Refer to the [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm) for available regions. We will use us-chicago-1 region for this lab.
 - Familiarity with **Oracle Cloud Infrastructure (OCI)** is helpful.  
 
-You may now proceed to the next lab. 🚀  
+You may now proceed to the next lab.
 
 ---
 
-## Learn More  
-
-- [OCI Generative AI Workshop: Enhancing Guest Experience in Hospitality](#)  
-- [OCI Generative AI Agents Workshop: Building an Agentic Hotel Concierge](#)  
-
----
-
-## Dataset  
+Dataset  
 
 The workshop uses a **multi-language TripAdvisor Hotel Reviews dataset**, provided in:  
 - **CSV format**  
 - **Markdown format**  
+
+
+
+---
+
+## Learn more
+
+[Click here]  (https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/) to know about OCI Generative AI Service
+
+![Alt text](images/OCI-GenAIService.png "OCI Gen AI Services")
+
+***Insert Links*** 
 
 ---
 
 ## Acknowledgments  
 
 **Authors:**  
-- Karol Stuart, Master Principal Cloud Architect  
-- Felipe Garcia, Master Principal Cloud Architect  
+- Felipe Garcia, Master Principal Cloud Architect 
 - Srini Mukkala, Master Principal Cloud Architect  
+- Karol Stuart, Master Principal Cloud Architect  
 
 **Last Updated by/Date** – Karol Stuart, August 2025  
