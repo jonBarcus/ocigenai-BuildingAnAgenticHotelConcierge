@@ -166,6 +166,29 @@ This is just the beginning. With this foundation, Maria can expand her AI concie
 
 From **language barriers** to **pattern recognition** and now **real-time problem solving**, Maria’s journey reflects how AI can completely transform hospitality management—taking her hotel from **reactive to proactive, overwhelmed to empowered, and manual to intelligent**. 
 
+
+## Task 4: Cleanup
+
+At the end of this lab, make sure to clean up the resources created so you don’t consume unnecessary quota or incur additional costs.
+
+Download the ["cleanup.py"](./files/cleanup.py) file.
+
+Drag and drop to cloud shell to upload it into your Cloud Shell environment and run the cleanup script:
+        ```
+        <copy>
+        source .venv/bin/activate   # if not already activated
+        python cleanup.py
+        </copy>
+        ```
+
+This script will delete:
+
+-   Object Storage buckets created for this lab
+-   Knowledge Base resources
+-   AI Agents and Agent Endpoints
+
+Once cleanup is complete, confirm in the OCI Console that the resources have been removed.
+
 ---
 
 ## Acknowledgements  
