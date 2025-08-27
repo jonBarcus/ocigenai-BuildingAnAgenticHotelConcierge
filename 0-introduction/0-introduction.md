@@ -15,9 +15,10 @@ This enables quick and effective responses that improve guest satisfaction.
 
 The workshop is divided into two parts:
 
-### Lab 1: Enhancing Guest Experience with OCI Generative AI  
+### Lab 1: Enhancing Guest Experience with OCI Generative AI.
+
 In this lab, you will:  
-- Use the **OCI Generative AI Playground**.  
+- Use the **OCI Generative AI Playground**. 
 - Work with a sample non-English review.  
 - Summarize it, analyze its sentiment (**Positive, Negative, or Neutral**), and translate it into English.  
 
@@ -25,11 +26,17 @@ In this lab, you will:
 
 ---
 
-### Lab 2: Building an Agentic Hotel Concierge  
+### Lab 2: 
+**(a) Building an Agentic Hotel Concierge**. 
+
 In this lab, you will:  
 - Build a full-fledged **AI Concierge** using the **OCI Generative AI Agent Development Kit (ADK)**.  
 - Create a **Knowledge Base** from a dataset of guest reviews to enable **Retrieval Augmented Generation (RAG)**.  
 - Enable the concierge to identify patterns and respond to queries about the **entire guest feedback knowledge base**.  
+
+         
+**(b) Building the Problem-Solving Concierge (Live Tool with OCI ADK)**
+In this lab, you will: 
 - Extend the agent with **custom tools** (e.g., web search), allowing it to provide **proactive solutions** by combining historical insights with real-time context.  
 
 ---
@@ -70,11 +77,10 @@ The workshop uses a **multi-language TripAdvisor Hotel Reviews dataset**, provid
 
 ## Learn more
 
-[Click here]  (https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/) to know about OCI Generative AI Service
+[Click here](https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/) to know about OCI Generative AI Service
 
-![Alt text](images/OCI-GenAIService.png "OCI Gen AI Services")
+![OCI Gen AI Services](./images/oci_gen_ai_service.png "OCI Gen AI Services")
 
-***Insert Links*** 
 
 ---
 
