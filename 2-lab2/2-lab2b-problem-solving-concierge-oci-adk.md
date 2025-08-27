@@ -1,4 +1,4 @@
-# Lab 2B: Build the Problem-Solving Concierge (Live Tool with OCI ADK)
+# Lab 2B: Build a Data-Driven Concierge to Solve Problems in Real Time with OCI ADK
 
 ### Introduction
 In this lab, we take Maria’s hotel AI journey to the next level.  
@@ -167,7 +167,7 @@ From **language barriers** to **pattern recognition** and now **real-time proble
 
 ---
 
-## Acknowledgments  
+## Acknowledgements  
 
 **Authors:**  
 - Felipe Garcia, Master Principal Cloud Architect 

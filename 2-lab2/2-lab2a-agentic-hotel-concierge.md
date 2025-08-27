@@ -64,6 +64,7 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 4.  Set up Python 3.12 with uv and run setup.py in CloudShell
 
     ```bash
+    <copy>
         # 1. set Python 3.12
         csruntimectl python set python-3.12
         python -V
@@ -85,7 +86,7 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
         source .venv/bin/activate && python setup.py
         # If activation doesn’t work in CloudShell, fall back to:
         uv run python setup.py
-
+    </copy>
     ```
 
     ![Run Python to Create ObjectStorage Knowledge-base Agents](./images/create_storage_kb_agents.png "Run Python to Create ObjectStorage Knowledge-base Agents")
@@ -132,7 +133,7 @@ The script will send a query to the agent, which should use **Retrieval Augmente
 
 ---
 
-## Acknowledgments  
+## Acknowledgements  
 
 **Authors:**  
 - Felipe Garcia, Master Principal Cloud Architect 

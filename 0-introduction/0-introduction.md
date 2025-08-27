@@ -1,4 +1,4 @@
-# Workshop: Enhancing Guest Experience with OCI Generative AI
+# Workshop: Enhance Guest Experience with OCI Generative AI
 
 This workshop focuses on using **OCI Generative AI services** to enhance guest experiences and streamline hotel operations.  
 
@@ -9,25 +9,19 @@ You will assume the role of **Maria**, the General Manager of a hotel, who recei
 
 This enables quick and effective responses that improve guest satisfaction.
 
----
-
-## Workshop Structure
-
 The workshop is divided into two parts:
 
-### Lab 1: Enhancing Guest Experience with OCI Generative AI.
+### **Lab 1: Enhance Guest Experience with OCI Generative AI**
 
 In this lab, you will:  
 - Use the **OCI Generative AI Playground**. 
 - Work with a sample non-English review.  
 - Summarize it, analyze its sentiment (**Positive, Negative, or Neutral**), and translate it into English.  
 
-👉 This task demonstrates how AI saves time while improving **accuracy** and **scalability** in handling guest reviews.
+This task demonstrates how AI saves time while improving **accuracy** and **scalability** in handling guest reviews.
 
----
-
-### Lab 2: 
-**(a) Building an Agentic Hotel Concierge**. 
+### **Lab 2:** 
+**(a) Build an Agentic Hotel Concierge**. 
 
 In this lab, you will:  
 - Build a full-fledged **AI Concierge** using the **OCI Generative AI Agent Development Kit (ADK)**.  
@@ -35,7 +29,7 @@ In this lab, you will:
 - Enable the concierge to identify patterns and respond to queries about the **entire guest feedback knowledge base**.  
 
          
-**(b) Building the Problem-Solving Concierge (Live Tool with OCI ADK)**
+**(b) Build a Data-Driven Concierge to Solve Problems in Real Time with OCI ADK**
 In this lab, you will: 
 - Extend the agent with **custom tools** (e.g., web search), allowing it to provide **proactive solutions** by combining historical insights with real-time context.  
 
@@ -75,7 +69,7 @@ The workshop uses a **multi-language TripAdvisor Hotel Reviews dataset**, provid
 
 ---
 
-## Learn more
+## Task1: Learn more
 
 [Click here](https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/) to know about OCI Generative AI Service
 
@@ -84,7 +78,7 @@ The workshop uses a **multi-language TripAdvisor Hotel Reviews dataset**, provid
 
 ---
 
-## Acknowledgments  
+## Acknowledgements  
 
 **Authors:**  
 - Felipe Garcia, Master Principal Cloud Architect 

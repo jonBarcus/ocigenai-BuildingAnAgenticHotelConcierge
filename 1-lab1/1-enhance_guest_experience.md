@@ -1,4 +1,4 @@
-# OCI Generative AI Workshop: Enhancing Guest Experience in Hospitality
+# OCI Generative AI Workshop: Enhance Guest Experience in Hospitality
 
 ## Introduction
 
@@ -55,17 +55,21 @@ A trimmed CSV dataset is provided in this repository under:
 2. Use the following prompt with your chosen review and click **Submit**.
 
    ```
+   <copy>
    Analyze the following hotel review. First, provide a one-paragraph summary of the review in its original language. After the summary, identify the sentiment as Positive, Negative, or Neutral.
 
    Here is the review:
    [PASTE THE NON-ENGLISH REVIEW TEXT HERE]
+   </copy>
    ```
 
    (e.g.)
 
    ```
+   <copy>
    Analyze the following hotel review. First, provide a one-paragraph summary of the review in its original language. After the summary, identify the sentiment as Positive, Negative, or Neutral.
 - Nằm ở số 4 Tôn Đức Thắng (trong khu villa cao cấp) và đối diện sông Trà Khúc, cách trung tâm thành phố Quảng Ngãi khoảng 2-3 km. Khách sạn Hana Riverside là một lựa chọn tuyệt vời cho sự riêng tư. - Đây thực chất là 1 dạng villa và kinh doanh các phòng
+   </copy>
    ```
 
    ![Alt text](./images/EnterInputAndSubmit.png "Enter Input And Submit")
@@ -83,22 +87,24 @@ A trimmed CSV dataset is provided in this repository under:
 2. Use the following prompt and click  **Submit** to get a full English translation:
 
    ```
+   <copy>
    Translate the following hotel review into English:
 
    [PASTE THE SAME NON-ENGLISH REVIEW TEXT HERE]
+   </copy>
    ```
 
    (e.g.)
    ```
+   <copy>
    Translate the following hotel review into English.
 - Nằm ở số 4 Tôn Đức Thắng (trong khu villa cao cấp) và đối diện sông Trà Khúc, cách trung tâm thành phố Quảng Ngãi khoảng 2-3 km. Khách sạn Hana Riverside là một lựa chọn tuyệt vời cho sự riêng tư. - Đây thực chất là 1 dạng villa và kinh doanh các phòng
+   </copy>
    ```
 
    The model outputs the translated summary in  **English language**  
    ![Alt text](./images/TranslatedText.png "Output - TranslatedText")
    ***Translated Text***
-
----
 
 ## Conclusion & Value
 
@@ -114,8 +120,16 @@ In this lab, you have:
 - **Accuracy**: AI captures nuance and cultural context.  
 - **Scalability**: Handle hundreds of reviews daily without additional staff.  
 
----
-
 ## What's Next
 
 In **Lab 2**, you will build an **AI Concierge** to analyze thousands of reviews at once, discover patterns, and recommend actions. This step takes you from **single-review analysis** to **strategic intelligence** for hospitality management.
+
+---
+
+## Acknowledgements  
+
+**Authors:**  
+- Felipe Garcia, Master Principal Cloud Architect 
+- Karol Stuart, Master Principal Cloud Architect  
+
+**Last Updated by/Date** – Karol Stuart, August 2025  
