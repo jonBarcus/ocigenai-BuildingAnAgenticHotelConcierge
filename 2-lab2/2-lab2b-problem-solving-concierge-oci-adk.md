@@ -181,6 +181,8 @@ Drag and drop to cloud shell to upload it into your Cloud Shell environment and 
         </copy>
         ```
 
+![Cleanup](./images/cleanup.png)
+
 This script will delete:
 
 -   Object Storage buckets created for this lab
