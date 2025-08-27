@@ -14,18 +14,19 @@ This lab assumes you have the following:
 
 - Access to Oracle Cloud Infrastructure (OCI), paid account or free tier, in a region that has Generative AI.  
 - Basic experience with OCI Cloud Console and standard components.  
-- The `handson-lab` repository cloned.  
+- The `handson-lab` repository cloned.
 
+Estimated Time:  25-30 minutes
 Tasks
 ---
 
-## Task 1: Verify if Agent is created 
+## Task 1: Verify if agent is created 
 
 1. Verify if Agent ADK is created. Go to Genertive AI Agent Services and verify if the "Hotel_Concierge_Agent_ADK" Agent is created. 
 
 ![Agent ADK Created](images/agent_adk_created.png)
 
-## Task 2: Run your RAG Agent
+## Task 2: Run your RAG agent
 
 Before running the agent, follow these setup steps in your Cloud Shell to prepare the Python environment (version >3.12) and install required dependencies:
 
@@ -113,7 +114,7 @@ This will start the agent and allow you to test its Retrieval Augmented Generati
 
 The script will use the **OCI Agent Development Kit (ADK)** to provision all necessary resources in your OCI tenancy.  
 
-## Task 3: Verify the Results.
+## Task 3: Verify the results.
 The script you ran will send a query to the agent. The agent should use **Retrieval Augmented Generation (RAG)** to provide a context-aware response based on:  
 
 - The dataset you uploaded  

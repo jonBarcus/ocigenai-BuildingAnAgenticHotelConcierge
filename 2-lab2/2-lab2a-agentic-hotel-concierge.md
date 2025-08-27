@@ -12,7 +12,6 @@ In this lab, you will build the AI Concierge using Retrieval Augmented Generatio
 
 - Run a script to upload the dataset and create the KnowledgeBase and agent.  
 - Create and Test your First Agent with Retrieval Augmented Generation (RAG).  
-- Run the Problem-Solving Concierge using the OCI Agent Development Kit (ADK).  
 
 ### Prerequisites
 This lab assumes you have the following:
@@ -20,6 +19,8 @@ This lab assumes you have the following:
 - Access to Oracle Cloud Infrastructure (OCI), paid account or free tier, in a region that has Generative AI.  
 - Basic experience with OCI Cloud Console and standard components.  
 - The `handson-lab` repository cloned.  
+
+Estimated Time:  45-50 minutes
 
 Tasks
 ---
@@ -112,7 +113,7 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
     ![Newly created Agents](./images/new_agents_created.png "Newly created Agents")    
 
-## Task 2: Test Your RAG Agent
+## Task 2: Test Your RAG agent
 
     Once the agent is active, click Launch chat. Test its knowledge from the dataset to confirm the RAG tool is working.
 
@@ -126,10 +127,6 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
 ![Test the RAG Agent](./images/chat_response.png "Chat Response")
 
-
----
-
-The script will send a query to the agent, which should use **Retrieval Augmented Generation (RAG)** to provide a context-aware response based on the dataset you uploaded.  
 
 ---
 

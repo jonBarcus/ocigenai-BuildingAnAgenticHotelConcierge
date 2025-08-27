@@ -59,6 +59,7 @@ The workshop uses a multi-language TripAdvisor Hotel Reviews dataset, provided i
 - CSV format  
 - Markdown format.   
 
+Estimated Total Workshop Time: 1.30 hours
 
 Tasks
 ---

@@ -24,9 +24,12 @@ We will use the multi-language TripAdvisor Hotel Reviews dataset from
 A trimmed CSV dataset is provided in this repository under:  
 [TripAdvisorReviewsMultiLang.csv](./datasets/TripAdvisorReviewsMultiLang.csv)  
 
+Estimated Time:  15-20 minutes
+
+Tasks
 ---
 
-## Task 1: Get Your Sample Text (5 minutes)
+## Task 1: Get Your Sample Text
 
 1. Open the CSV ( [TripAdvisorReviewsMultiLang.csv](./files/TripAdvisorReviewsMultiLang.csv) ) dataset. 
 2. Copy one **non-English review** (e.g., Vietnamese, ).
@@ -34,7 +37,7 @@ A trimmed CSV dataset is provided in this repository under:
 
 ---
 
-## Task 2: Navigate to the OCI Generative AI Playground (5 minutes)
+## Task 2: Navigate to the OCI Generative AI Playground
  
 1. In the **OCI Console**, go to: **Analytics & AI → 'Generative AI' in AI Services **.  
 
@@ -46,7 +49,7 @@ A trimmed CSV dataset is provided in this repository under:
 
 ---
 
-## Task 3: Summarize and Analyze the Review (8 minutes)
+## Task 3: Summarize and Analyze the Review
 
 1. In the Playground, select a **Grok model** (e.g. xai.grok-3). Grok is a strong multilingual capabilities.  
 
@@ -81,7 +84,7 @@ A trimmed CSV dataset is provided in this repository under:
 
 ---
 
-## Task 4: Translate the Review (2 minutes)
+## Task 4: Translate the Review
 
 1. Start a new chat in the Playground.  
 2. Use the following prompt and click  **Submit** to get a full English translation:
@@ -104,9 +107,8 @@ A trimmed CSV dataset is provided in this repository under:
 
    The model outputs the translated summary in  **English language**  
    ![Alt text](./images/TranslatedText.png "Output - TranslatedText")
-   ***Translated Text***
 
-## Conclusion & Value
+### Conclusion & Value
 
 In this lab, you have:
 
@@ -120,9 +122,9 @@ In this lab, you have:
 - **Accuracy**: AI captures nuance and cultural context.  
 - **Scalability**: Handle hundreds of reviews daily without additional staff.  
 
-## What's Next
+### What's Next
 
-In **Lab 2**, you will build an **AI Concierge** to analyze thousands of reviews at once, discover patterns, and recommend actions. This step takes you from **single-review analysis** to **strategic intelligence** for hospitality management.
+In Lab 2, you will build an AI Concierge** to analyze thousands of reviews at once, discover patterns, and recommend actions. This step takes you from single-review analysis to strategic intelligence for hospitality management.
 
 ---
 
