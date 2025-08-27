@@ -4,7 +4,7 @@
       {
         "title": "Introduction",
         "description": "The Introduction is always first. The title and contents menu title match for the Introduction.",
-        "filename": "../../0-introduction.md"
+        "filename": "../../0-introduction/0-introduction.md"
       },
       {
           "title": "Get Started",
@@ -13,16 +13,16 @@
       },
       {
         "title": "Lab 1: Enhancing Guest Experience in Hospitality",
-        "filename": "../../1-lab1.md"
+        "filename": "../../1-lab1/1-enhance_guest_experience.md"
       },
       {
-        "title": "Lab 2A: Building an Agentic Hotel Concierge - Automated Deployment",
-        "filename": "../../2-lab2A.md"
-      },      
+        "title": "Lab 2a: Build an Agentic Hotel Concierge",
+        "filename": "../../2-lab2/2-lab2a-agentic-hotel-concierge.md"
+      },
       {
-        "title": "Lab 2B: Building an Agentic Hotel Concierge - Manual Agent Creation via OCI Console",
-        "filename": "../../2-lab2B.md"
-      },           
+        "title": "Lab 2b: Build the Problem-Solving Concierge (Live Tool with OCI ADK)",
+        "filename": "../../2-lab2/2-lab2b-problem-solving-concierge-oci-adk.md"
+      },      
       {
           "title": "Need Help?",
           "description": "Solutions to Common Problems and Directions for Receiving Live Help",
