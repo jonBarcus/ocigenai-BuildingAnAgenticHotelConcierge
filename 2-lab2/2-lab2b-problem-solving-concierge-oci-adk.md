@@ -119,7 +119,11 @@ The script you ran will send a query to the agent. The agent should use **Retrie
 - The dataset you uploaded  
 - Real-time web crawls  
 
-![Agent output ADK output](./images/agent_adk_output1.png)
+![Agent output ADK output1](./images/agent_adk_output1.png)
+
+![Agent output ADK output2](./images/agent_adk_output2.png)
+
+![Agent output ADK output3](./images/agent_adk_output3.png)
 
 Verify the responses carefully. You should see:  
 
