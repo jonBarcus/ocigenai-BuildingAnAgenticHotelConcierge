@@ -61,11 +61,31 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
     ![Run Python](./images/drag_drop_files.png)
 
-4.  Check Python version greater than >3.9 and run Python Script
+4.  Set up Python 3.12 with uv and run setup.py in CloudShell
 
     ```bash
-    python --version
-    python setup.py
+        # 1. set Python 3.12
+        csruntimectl python set python-3.12
+        python -V
+        
+        # 2. clone repo
+        git clone https://github.com/rhossi/handson-lab.git
+        cd handson-lab
+        
+        # 3. install uv
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        export PATH="$HOME/.local/bin:$PATH"   # make uv available
+        
+        # 4. create venv + install deps from pyproject.toml
+        uv venv
+        uv sync
+        
+        # 5. run
+        # Try activation first:
+        source .venv/bin/activate && python setup.py
+        # If activation doesn’t work in CloudShell, fall back to:
+        uv run python setup.py
+
     ```
 
     ![Run Python to Create ObjectStorage Knowledge-base Agents](./images/create_storage_kb_agents.png "Run Python to Create ObjectStorage Knowledge-base Agents")
