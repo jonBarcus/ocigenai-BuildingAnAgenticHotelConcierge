@@ -31,9 +31,17 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
 1.  Setup OCI config file
     
-    Open the cloud shell from the top right corner. Setup your config file in your cloud shell. Make sure your region is set to us-chicago-1. Open .oci/config file and set the default region 
+    Open Cloud Shell from the top-right corner of the OCI Console, then run this one-liner to create the `.oci` folder, set permissions, and open the config file in `vi`:
 
     ![Open Cloud Shell](./images/open_cloud_shell.png "Open Cloud Shell")
+
+    ```bash
+    <copy>
+    mkdir -p ~/.oci && chmod 700 ~/.oci && vi ~/.oci/config
+    </copy>
+    ```
+
+    Inside the editor, press i to insert and paste the following (replace values with your own):
 
     **~/.oci/config file**
     
@@ -46,7 +54,27 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     key_file=~/.oci/xxxxxxxxxxxPRIVATE_KEY@oracle.com-2025-07-31T12_49_17.566Z.pem
     </copy>
     ```
-    *Note: You can get the user OCID,fingerprint, tenancy md key_file during the lab from the facilitator. If you are using your tenancy, you can get it from your OCI console*
+
+    Save and exit by pressing Esc, typing :wq, and pressing Enter.
+    Finally, secure the file permissions:
+    
+    ```bash
+    <copy>
+    chmod 600 ~/.oci/config ~/.oci/*.pem
+    </copy>
+    ```
+
+    *Note: You can get the user OCID,fingerprint, tenancy, key_file after creating a fingerprint. Please see below screenshot to create and update to cloud shell*
+
+    ![Open Cloud Shell](./images/add_api_key.png "Open Cloud Shell")    
+
+    ![Open Cloud Shell](./images/add_api_key_click_add.png "Open Cloud Shell")    
+
+    ![Open Cloud Shell](./images/copy_config.png "Open Cloud Shell")    
+
+    ![Open Cloud Shell](./images/copy_private_key_set_permission.png "Open Cloud Shell")            
+
+    Verify if config file is setup correctly 
 
     ![Setup Config](./images/config.png "Setup Config")
 
@@ -62,31 +90,12 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
     ![Run Python](./images/drag_drop_files.png)
 
-4.  Set up Python 3.12 with uv and run setup.py in CloudShell
+4.  Check python script >3.9 and run setup.py in CloudShell
 
     ```bash
     <copy>
-        # 1. set Python 3.12
-        csruntimectl python set python-3.12
-        python -V
-        
-        # 2. clone repo
-        git clone https://github.com/rhossi/handson-lab.git
-        cd handson-lab
-        
-        # 3. install uv
-        curl -LsSf https://astral.sh/uv/install.sh | sh
-        export PATH="$HOME/.local/bin:$PATH"   # make uv available
-        
-        # 4. create venv + install deps from pyproject.toml
-        uv venv
-        uv sync
-        
-        # 5. run
-        # Try activation first:
-        source .venv/bin/activate && python setup.py
-        # If activation doesn’t work in CloudShell, fall back to:
-        uv run python setup.py
+    python -V
+    python setup.py
     </copy>
     ```
 

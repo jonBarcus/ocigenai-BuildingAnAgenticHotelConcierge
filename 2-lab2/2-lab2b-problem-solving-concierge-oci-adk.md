@@ -79,7 +79,7 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     ```
 
 7. Set environment variables
-    -   Create an account in Tavily.com and signup and get the API Key.
+    -   Create an account in [https://www.tavily.com](https://www.tavily.com) and signup and get the API Key.
 
         ![Run deployment script](./images/tavily_signup.png)
         ![Run deployment script](./images/tavily_api_key.png)

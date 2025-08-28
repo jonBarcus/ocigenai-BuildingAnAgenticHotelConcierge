@@ -26,7 +26,6 @@ A trimmed CSV dataset is provided in this repository under:
 
 Estimated Time:  15-20 minutes
 
-Tasks
 ---
 
 ## Task 1: Get Your Sample Text
