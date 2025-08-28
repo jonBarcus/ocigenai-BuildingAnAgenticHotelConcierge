@@ -38,46 +38,18 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     </copy>
     ```
 
-2. Install uv and create virtual environment
+2. Download the [concierge_agent.py](./files/pyproject.toml) to your local. Drag and drop the files into cloud shell.
+   
+3. Install uv, create virtual environment and install dependencies
     ```
     <copy>
-    curl -LsSf https://astral.sh/uv/install.sh | sh
+    curl -LsSf https://astral.sh/uv/install.sh | sh # install uv
     export PATH="$HOME/.local/bin:$PATH"  # Add to ~/.bashrc for persistence
-    uv --version
-    uv venv
+    uv venv # create virtual env
+    uv sync # install all dependencies
     </copy>
     ```
-
-3. Activate virtual environment
-    ```
-    <copy>
-    source .venv/bin/activate
-    </copy>
-    ```
-
-4. Ensure pip is available and upgraded
-    ```
-    <copy>
-    python -m ensurepip --upgrade
-    python -m pip install --upgrade pip
-    </copy>
-    ```
-
-5. Install required dependencies
-    ```
-    <copy>
-    pip install "oci[adk]" rich PyYAML requests
-    </copy>
-    ```
-6. Verify installation
-    ```
-    <copy>
-    python -m pip show rich
-    python -m pip show oci
-    python -m pip show oci-adk
-    </copy>
-    ```
-
+    
 7. Set environment variables
     -   Create an account in [https://www.tavily.com](https://www.tavily.com) and signup and get the API Key.
 
@@ -99,11 +71,10 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     export KNOWLEDGE_BASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </copy>
     ```
-8. Download the [concierge_agent.py](./files/concierge_agent.py) to your local. Drag and drop the files into cloud shell. Make sure your python is >3.12 version  and run the Concierge Agent python script
+8. Download the [concierge_agent.py](./files/concierge_agent.py) to your local. Drag and drop the files into cloud shell.
     ```
     <copy>
-    python --version
-    python concierge_agent.py
+    uv run concierge_agent.py
     </copy>
     ```
 
