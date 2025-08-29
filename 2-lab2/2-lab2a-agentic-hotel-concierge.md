@@ -30,6 +30,9 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
 
 1.  Setup OCI config file
+
+    ## TODO: Include note about _why_ setting up the OCI config file is imporant
+    ## TODO: Include note/mention about subscribing to CHICAGO region
     
     Open Cloud Shell from the top-right corner of the OCI Console, 
 
@@ -44,7 +47,7 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     ```
 
     Follow the prompts and enter the required details when asked:
-    -   Enter a location for your config [Click Enter]
+    -   Enter a location for your config [Hit Enter]
     -   Tenancy OCID (Enter your tenancy OCID, refer screenshots below)
     -   User OCID (enter our user OCID, refer screenshots below)
     -   Region (give us-chicago-1)
@@ -86,7 +89,7 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     
     ![Open Namespace Output Shell](./images/oci_ns_output.png "Open Namespace Output Shell")  
 
-2.  Run the following command to check if the region is set to us-chicago-1. 
+3.  Run the following command to check if the region is set to us-chicago-1. 
 
     ```bash
     <copy>
@@ -94,11 +97,11 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     </copy>
     ```
 
-3.  Copy the [setup.py](./files/setup.py) and [TripAdvisorReviewsMultiLang.md](./files/TripAdvisorReviewsMultiLang.md) file to your local machine.Drag and drop inside the Cloud Shell. 
+4.  Copy the [setup.py](./files/setup.py) and [TripAdvisorReviewsMultiLang.md](./files/TripAdvisorReviewsMultiLang.md) file to your local machine.Drag and drop inside the Cloud Shell. 
 
     ![Run Python](./images/drag_drop_files.png)
 
-4.  Check python script >3.9 and run setup.py in CloudShell.
+5.  Check python script >3.9 and run setup.py in CloudShell.
 
     *Note: If you are deploying resources into a compartment other than the root compartment, you need to provide the Compartment OCID, which you can find in the OCI Console by clicking your Profile (email) on top right, selecting Compartments from the side menu, choosing the appropriate compartment, and copying its OCID.*
 
@@ -113,7 +116,7 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     ```bash
     <copy>
     python -V
-    python setup.py --compartment-id xxxxxxxxYOUR_COMPARTMENT_IDxxxxxx_ocid1.compartment.oc1..xxxxxxxxx
+    python setup.py --compartment-id <your-compartment-ocid-here>
     </copy>
     ```
 
@@ -126,17 +129,17 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     ![Limit Increase](./images/limit_increase_1.png "Limit Increase")
     ![Increase the Limit for Generative-Agent count, Knowledgebase count and Agent Endpoint count limits](./images/limit_increase_2.png "Increase the Limit for Generative-Agent count, Knowledgebase count and Agent Endpoint count limits")
 
-5.  View the newly created storage bucket and the uploaded dataset in the UI.
+6.  View the newly created storage bucket and the uploaded dataset in the UI.
 
     ![Newly created Buckets](./images/new_bucket_created.png "Newly created Buckets")    
     ![Datasets in Buckets](./images/dataset_in_bucket.png "Datasets in Buckets")    
 
-6.  Explore your newly created knowledge base and the data source in the UI.
+7.  Explore your newly created knowledge base and the data source in the UI.
 
     ![Newly created knowledge base](./images/knowledgebase_created.png "Newly created knowledge base")    
     ![Newly created knowledge base](./images/knowledgebase_datasource.png "Newly created knowledge base")    
 
-7.  Confirm that the agents have been created successfully in the UI.
+8.  Confirm that the agents have been created successfully in the UI.
 
     ![Newly created Agents](./images/new_agents_created.png "Newly created Agents")    
 
