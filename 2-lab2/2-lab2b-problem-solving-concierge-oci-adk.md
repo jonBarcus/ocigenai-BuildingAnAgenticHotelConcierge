@@ -38,7 +38,7 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     </copy>
     ```
 
-2. Download the [concierge_agent.py](./files/pyproject.toml) to your local. Drag and drop the files into cloud shell.
+2. Download the [pyproject.toml](./files/pyproject.toml) to your local. Drag and drop the files into cloud shell.
    
 3. Install uv, create virtual environment and install dependencies
     ```
