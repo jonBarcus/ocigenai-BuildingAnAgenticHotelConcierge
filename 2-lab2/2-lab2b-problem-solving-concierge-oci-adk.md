@@ -124,7 +124,6 @@ Verify the responses carefully. You should see:
 - **Lab 2, Part 1 – Scale with RAG:** Gain insights from the full guest feedback database  
 - **Lab 2, Part 2 – Extend with Tools:** Integrate real-time web intelligence  
 
-### Back in Ho Chi Minh City:
 Maria’s Grand Plaza Hotel can now:  
 - Spot recurring issues like Wi-Fi outages across dozens of reviews  
 - Search live news (e.g., marathon disruptions) to explain guest complaints  
