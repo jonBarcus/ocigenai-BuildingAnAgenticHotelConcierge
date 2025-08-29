@@ -154,7 +154,8 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
 ![Test the RAG Agent](./images/chat_response.png "Chat Response")
 
-
+*Note: If the chat does not return the expected results, check whether the ingestion job has failed. If it has, raise a support ticket for assistance.*
+    ![Ingestion job failure](./images/ingestion_job_failure.png "Ingestion job failure")   
 ---
 
 ## Acknowledgements  

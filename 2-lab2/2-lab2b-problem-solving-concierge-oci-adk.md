@@ -38,7 +38,8 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     </copy>
     ```
 
-2. Download the [pyproject.toml](./files/pyproject.toml) to your local. Drag and drop the files into cloud shell.
+2. Download the [concierge_agent.py](./files/concierge_agent.py) and [pyproject.toml](./files/pyproject.toml)  files to your local machine, then upload them to Cloud Shell by dragging and dropping them into the Cloud Shell window.
+
    
 3. Install uv, create virtual environment and install dependencies
     ```
@@ -50,7 +51,7 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     </copy>
     ```
     
-7. Set environment variables
+4. Set environment variables
     -   Create an account in [https://www.tavily.com](https://www.tavily.com) and signup and get the API Key.
 
         ![Run deployment script](./images/tavily_signup.png)
@@ -71,7 +72,7 @@ Before running the agent, follow these setup steps in your Cloud Shell to prepar
     export KNOWLEDGE_BASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </copy>
     ```
-8. Download the [concierge_agent.py](./files/concierge_agent.py) to your local. Drag and drop the files into cloud shell.
+5. Run the concierge_agent.py script
     ```
     <copy>
     uv run concierge_agent.py
