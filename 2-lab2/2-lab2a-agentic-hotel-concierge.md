@@ -129,21 +129,34 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     ![Limit Increase](./images/limit_increase_1.png "Limit Increase")
     ![Increase the Limit for Generative-Agent count, Knowledgebase count and Agent Endpoint count limits](./images/limit_increase_2.png "Increase the Limit for Generative-Agent count, Knowledgebase count and Agent Endpoint count limits")
 
-6.  View the newly created storage bucket and the uploaded dataset in the UI.
+## Task 2:  View your newly created resources
+
+1.  View the newly created storage bucket and the uploaded dataset in the UI.
+       - Click on the hamburger menu in the upper left of the console to open the menu
+       - Click on **Storage**
+       - Under **Object Storage & Archive Storage** click on **Buckets** (*make sure to select the OCI compartment you provisioned to*)
+       - Click in to **ai-workshop-labs-datasets**
 
     ![Newly created Buckets](./images/new_bucket_created.png "Newly created Buckets")    
     ![Datasets in Buckets](./images/dataset_in_bucket.png "Datasets in Buckets")    
 
-7.  Explore your newly created knowledge base and the data source in the UI.
+3.  Explore your newly created knowledge base and the data source in the UI.
+       - Click on the hamburger menu in the upper left of the console to open the menu
+       - Click on **Analytics & AI**
+       - Under **AI Services** click on **Generative AI Agents**
+       - Click on **Knowledge Bases** on the left side of the screen
+       - Click in to **Hotel_Concierge_Knowledge_Base**
 
     ![Newly created knowledge base](./images/knowledgebase_created.png "Newly created knowledge base")    
     ![Newly created knowledge base](./images/knowledgebase_datasource.png "Newly created knowledge base")    
 
-8.  Confirm that the agents have been created successfully in the UI.
+4.  Confirm that the agents have been created successfully in the UI.
+       - Click on **Knowledge bases** in towards the upper left
+       - Click on **Agents**
 
     ![Newly created Agents](./images/new_agents_created.png "Newly created Agents")    
 
-## Task 2: Test Your RAG agent
+## Task 3: Test Your RAG agent
 
 Once the agent is active, click Launch chat. Test its knowledge from the dataset to confirm the RAG tool is working.
 
