@@ -151,14 +151,19 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
     ![Newly created knowledge base](./images/knowledgebase_datasource.png "Newly created knowledge base")    
 
 4.  Confirm that the agents have been created successfully in the UI.
-       - Click on **Knowledge bases** in towards the upper left
+       - Click on **Knowledge bases** in the upper left
        - Click on **Agents**
 
     ![Newly created Agents](./images/new_agents_created.png "Newly created Agents")    
 
 ## Task 3: Test Your RAG agent
 
-Once the agent is active, click Launch chat. Test its knowledge from the dataset to confirm the RAG tool is working.
+ 1. Once the agent is active, click Launch chat. Test its knowledge from the dataset to
+    confirm the RAG tool is working:
+       - Click on **Chat** on the left side
+       - Select *Hotel_Concierge_Agent* for the **Agent**
+       - Select *Hotel_Concierge_Agent_Endpoint* for the **Agent endpoint**
+       - Copy the below text and paste it in **Type a message...** field and submit
 
 ```
 <copy>
