@@ -142,20 +142,21 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
 ## Task 2: Test Your RAG agent
 
-    Once the agent is active, click Launch chat. Test its knowledge from the dataset to confirm the RAG tool is working.
+Once the agent is active, click Launch chat. Test its knowledge from the dataset to confirm the RAG tool is working.
 
-    ```
-    <copy>
-    "Summarize the most common positive comments people make about their rooms."
-    "Are there any negative reviews that mention the check-in process?"
-    </copy>
-    ```
-
+```
+<copy>
+"Summarize the most common positive comments people make about their rooms."
+"Are there any negative reviews that mention the check-in process?"
+</copy>
+```   
 
 ![Test the RAG Agent](./images/chat_response.png "Chat Response")
 
 *Note: If the chat does not return the expected results, check whether the ingestion job has failed. If it has, raise a support ticket for assistance.*
-    ![Ingestion job failure](./images/ingestion_job_failure.png "Ingestion job failure")   
+![Ingestion job failure](./images/ingestion_job_failure.png "Ingestion job failure")  
+
+
 ---
 
 ## Acknowledgements  
