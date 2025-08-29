@@ -48,9 +48,9 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
     Follow the prompts and enter the required details when asked:
     -   Enter a location for your config [Hit Enter]
-    -   Tenancy OCID (Enter your tenancy OCID, refer screenshots below)
-    -   User OCID (enter our user OCID, refer screenshots below)
-    -   Region (give us-chicago-1)
+    -   Tenancy OCID (Enter your tenancy OCID, see screenshots below)
+    -   User OCID (enter our user OCID, see screenshots below)
+    -   Region (enter us-chicago-1)
     -   Enter 'Y' to generate API signing Key
     -   Path to the directory of the public and private key files (press Enter to let it generate automatically)
     -   Enter Passphrase and reconfirm as "N/A"
