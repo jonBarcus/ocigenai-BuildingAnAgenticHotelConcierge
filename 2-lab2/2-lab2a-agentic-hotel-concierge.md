@@ -31,52 +31,60 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
 1.  Setup OCI config file
     
-    Open Cloud Shell from the top-right corner of the OCI Console, then run this one-liner to create the `.oci` folder, set permissions, and open the config file in `vi`:
+    Open Cloud Shell from the top-right corner of the OCI Console, 
 
     ![Open Cloud Shell](./images/open_cloud_shell.png "Open Cloud Shell")
 
-    ```bash
-    <copy>
-    mkdir -p ~/.oci && chmod 700 ~/.oci && vi ~/.oci/config
-    </copy>
-    ```
-
-    Inside the editor, press i to insert and paste the following (replace values with your own):
-
-    **~/.oci/config file**
+    then run the following command to start the guided setup:
     
     ```bash
     <copy>
-    user=ocid1.user.oc1..aaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    fingerprint=3c:1f:1b:c8:69:d0:0a:f1:b2:4e:aa:aa:aa:aa:aa:aa:aa
-    tenancy=ocid1.tenancy.oc1..aaaaaaaaihbmw6hm3xxxxxxxxxxxxxxxxxxxxxxxxxx
-    region=us-chicago-1
-    key_file=~/.oci/xxxxxxxxxxxPRIVATE_KEY@oracle.com-2025-07-31T12_49_17.566Z.pem
+    oci setup config
     </copy>
     ```
 
-    Save and exit by pressing Esc, typing :wq, and pressing Enter.
-    Finally, secure the file permissions:
+    Follow the prompts and enter the required details when asked:
+    -   Enter a location for your config [Click Enter]
+    -   Tenancy OCID (Enter your tenancy OCID, refer screenshots below)
+    -   User OCID (enter our user OCID, refer screenshots below)
+    -   Region (give us-chicago-1)
+    -   Enter 'Y' to generate API signing Key
+    -   Path to the directory of the public and private key files (press Enter to let it generate automatically)
+    -   Enter Passphrase and reconfirm as "N/A"
+
+
+    ![OCI Setup Config](./images/oci_setup_config.png "OCI Setup Config")    
+
+    ![OCI Setup Enter User OCID](./images/oci_setup_enter_user_ocid.png "OCI Setup Enter User OCID")    
+
+    ![OCI Setup Tenancy OCID](./images/oci_setup_tenancy_ocid.png "OCI Setup Tenancy OCID")    
+
+    ![OCI Setup Program Output](./images/oci_setup_all.png "OCI Setup Program Output")      
+
+    Once completed, a private key will be created locally, and a public key will be generated. To view the newly created public key, run:
     
     ```bash
     <copy>
-    chmod 600 ~/.oci/config ~/.oci/*.pem
+    cat ~/.oci/oci_api_key_public.pem
+    </copy>
+    ```       
+
+    Copy the entire output and paste it into the OCI Console under:    Profile → Tokens & Keys → Add API Key → Paste a Public Key    
+
+    ![Open Cloud Shell](./images/add_api_key_paste_public_key.png "Open Cloud Shell")        
+
+
+    Verify your config file works:    
+
+    ```bash
+    <copy>
+    oci os ns get
     </copy>
     ```
 
-    *Note: You can get the user OCID,fingerprint, tenancy, key_file after creating a fingerprint. Please see below screenshot to create and update to cloud shell*
-
-    ![Open Cloud Shell](./images/add_api_key.png "Open Cloud Shell")    
-
-    ![Open Cloud Shell](./images/add_api_key_click_add.png "Open Cloud Shell")    
-
-    ![Open Cloud Shell](./images/copy_config.png "Open Cloud Shell")    
-
-    ![Open Cloud Shell](./images/copy_private_key_set_permission.png "Open Cloud Shell")            
-
-    Verify if config file is setup correctly 
-
-    ![Setup Config](./images/config.png "Setup Config")
+    If it returns your namespace, your config is correctly set up .
+    
+    ![Open Namespace Output Shell](./images/oci_ns_output.png "Open Namespace Output Shell")  
 
 2.  Run the following command to check if the region is set to us-chicago-1. 
 
@@ -90,12 +98,22 @@ In this task, you'll run the cloud shell to run a script before we test the AI a
 
     ![Run Python](./images/drag_drop_files.png)
 
-4.  Check python script >3.9 and run setup.py in CloudShell
+4.  Check python script >3.9 and run setup.py in CloudShell.
+
+    *Note: If you are deploying resources into a compartment other than the root compartment, you need to provide the Compartment OCID, which you can find in the OCI Console by clicking your Profile (email) on top right, selecting Compartments from the side menu, choosing the appropriate compartment, and copying its OCID.*
 
     ```bash
     <copy>
     python -V
     python setup.py
+    </copy>
+    ```
+    OR
+
+    ```bash
+    <copy>
+    python -V
+    python setup.py --compartment-id xxxxxxxxYOUR_COMPARTMENT_IDxxxxxx_ocid1.compartment.oc1..xxxxxxxxx
     </copy>
     ```
 
